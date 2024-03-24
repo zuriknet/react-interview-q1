@@ -31,7 +31,13 @@ const CustomDropdown = ({ options, placeholder }) => {
   
     return (
       <div>
-        <CustomDropdown options={options} placeholder="Select an option" />
+        <CustomDropdown
+          className="form-control"
+          name="location"
+          type="location" 
+          options={options} 
+          placeholder="Select an Location"
+           />
       </div>
     );
   };
