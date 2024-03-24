@@ -1,6 +1,7 @@
 import React, { useState, Fragment } from "react";
 import Form from "./Form";
 import Table from "./Table";
+
 function Profile() {
   const [tableData, setTableData] = useState([]);
   const [formObject, setFormObject] = useState({
@@ -24,6 +25,7 @@ function Profile() {
       setFormObject(isEmpty);
     }
   };
+
   return (
     <Fragment>
       <Form

@@ -1,6 +1,6 @@
 function Table({ tableData }) {
   return (
-    <table className="table">
+    <table className="table striped bordered hover">
       <thead>
         <tr>
           <th>Name</th>

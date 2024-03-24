@@ -3,8 +3,10 @@ import CustomDropdown from "./CustomDropdown";
 function Form({ onValChange, formObject, onFormSubmit }) {
   CustomDropdown.options = formObject.location;
   return (
+    <>
     <div className="row mb-4">
-      <div className="col mb-3">
+      <div className="col-12 mb-3">
+      <label>Name</label>
         <input
           type="text"
           className="form-control"
@@ -14,15 +16,19 @@ function Form({ onValChange, formObject, onFormSubmit }) {
           name="name"
         />
       </div>
-      <div className="col mb-3">
+      <div className="col-12 mb-3">
+      <label>Location</label>
         <CustomDropdown />
       </div>
-      <div className="col-2 d-grid float-right">
+    </div>
+    <div className="row mb-4">
+      <div className="col-10"></div>
+      <div className="col-2">
           <input
             size="sm"
             type="reset"
             value="Clear"
-            className="mb-1 btn btn-secondary"
+            className="mb-2 me-4 btn btn-secondary float-right"
             />
           <input
             size="sm"
@@ -32,6 +38,7 @@ function Form({ onValChange, formObject, onFormSubmit }) {
           />
       </div>
     </div>
+    </>
   );
 }
 export default Form;
